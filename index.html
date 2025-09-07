@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <meta name="description" content="Photography by Jerry Yun." />
+
+        <!-- social preview -->
+        <meta property="og:title" content="Jerry Yun - Photography" />
+        <meta property="og:description" content="Photography by Jerry Yun." />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="images/Amden.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <link rel="preload" href="images/Amden.jpg" as="image" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <main class="wrap">
+            <header class="top">
+                <h1>Jerry Yun</h1>
+                <nav>
+                    <a href="#" aria-current="page">Gallery</a>
+                    <a href="mailto:zizhuoyun@gmail.com">Contact</a>
+                </nav>
+            </header>
+
+            <figure class="Amden">
+                <img src="images/Amden.jpg" alt="Day trip from Zurich, by Jerry Yun" />
+                <figcaption>© <span id="y"></span> Jerry Yun</figcaption>
+            </figure>
+        </main>
+
+        <script>
+            //auto year
+            document.getElementById('y').textContent = new Date().getFullYear();
+        </script>
+    </body>
+</html>
